@@ -1,0 +1,16 @@
+﻿
+@model Post
+
+<body>
+    @using (Html.BeginForm("Adiciona", "Post"))
+    {
+        @Html.EditorFor(p => p)
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <input type="hidden" name="Publicado" value="@Model.Publicado.ToString()" />
+        <input type="hidden" name="DataPublicacao" value="@Model.DataPublicacao.ToString()" />
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    }
+    @section Scripts{
+        @Html.Partial("_Scripts")
+    }
+</body>

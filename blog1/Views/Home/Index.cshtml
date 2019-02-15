@@ -1,0 +1,11 @@
+﻿@model IList<Post>
+
+<div>
+    @foreach (var p in Model)
+    {
+        <article>
+            <h1>@p.Titulo</h1>
+            <h1>@p.Resumo</h1>
+        </article>
+    }
+</div>

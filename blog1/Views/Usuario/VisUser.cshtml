@@ -1,0 +1,29 @@
+﻿@{
+    Layout = null;
+}
+
+@model IList<RegistroViewModel>
+
+<h2>Lista de Usuários</h2>
+@Html.ActionLink("Incluir Usuário", "NovoUser", "Usuario", new { Area = "" }, new { @class = "btm btn-primary" })
+
+<table class="table table-striped table-hover table-bordered">
+    <caption>Lista dos usuários cadastrados no blog.</caption>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td>
+                    <h4>@Html.ActionLink(p.LoginName, "EditUsu", new { Id = p.Id })</h4>
+                    <p>@p.Email</p>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
