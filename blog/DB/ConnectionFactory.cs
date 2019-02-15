@@ -12,7 +12,7 @@ namespace blog.DB
     public class ConnectionFactory
     {
         public static IDbConnection CriaConexao()
-        {
+        {   //alvaro
             //var stringConexao = "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Blog;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             var builder = new ConfigurationBuilder()
                             .SetBasePath(Directory.GetCurrentDirectory())
