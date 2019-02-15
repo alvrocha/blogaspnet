@@ -16,7 +16,7 @@ namespace blog.DB
         public DbSet<Post> Posts { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
 
-        /*
+        /* //alrocha
                 protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
                 {
                     var builder = new ConfigurationBuilder()
