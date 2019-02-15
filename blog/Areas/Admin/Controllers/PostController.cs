@@ -16,7 +16,7 @@ namespace blog.Areas.Admin.Controllers
     [AutorizacaoFilter]
     [Area("Admin")]
     public class PostController : Controller
-    {
+    {//alrocha1
         private PostDAO dao;
         
         public PostController(PostDAO dao)
