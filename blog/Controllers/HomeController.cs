@@ -25,6 +25,7 @@ namespace blog.Controllers
             IList<Post> publicados = dao.ListaPublicados();
             return View(publicados);
         }
+        
 
         public IActionResult Busca(string termo)
         {
